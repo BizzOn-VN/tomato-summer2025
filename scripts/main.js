@@ -1,53 +1,47 @@
-jQuery(document).ready(function ($) {
- 
-  var App = App || {};
+'use strict';
 
-  //---MAIN----
-  $(function () {
-      App.Site.getslide();
+/* HELPER: Checks Whether an Element Exists
+----------------------------------------------------------------------------------------------------*/
+(function( $ ) {
 
+  $.fn.extend({
+    exists: function() {
+      if ( this.length > 0 ) {
+        return true;
+      } else {
+        return false;
+      }
+    }
   });
 
-  //--All site
-    App.Site = function(){
-
-        var getslide = function(){
-            $('.banner .owl-carousel').owlCarousel({
-                loop:true,
-                margin:10,
-                autoplay:true,
-                autoplayTimeout: 3000,
-                autoplayHoverPause:false,
-                nav:false,
-                dots:false,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:1
-                    },
-                    1000:{
-                        items:1
-                    }
-                }
-            })
-        }
-
-        
-        return{
-            getslide:getslide,
-
-        };
-
-    }(); 
-
-  //--End All site
+})( jQuery );
 
 
+
+jQuery(document).on("ready",function () {
     
-   
-});    
+});
+ 
+    $('.banner .owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause:false,
+        nav:false,
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
 
 
 $('.ui.dropdown')
