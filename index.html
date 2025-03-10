@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
     <link href="vendor/wow/animation.css" rel="stylesheet" type="text/css">
     <link href="vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/owlcarousel/owl.theme.default.min.css" rel="stylesheet" type="text/css">
     <link href="vendor/fancybox/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
     <link href="vendor/semantic/semantic.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" media="screen">
@@ -21,14 +22,28 @@
         <div class="container">
             <ul class="main-menu">
                 <li><a href="#"><img src="./images/logo.png" alt=""></a></li>
-                <li class="md-desktop"><a href="#">Giới thiệu</a></li>
-                <li class="md-desktop"><a href="#">Chương trình học</a></li>
+                <li class="md-desktop" ><a href="#" class="md-section-1">Giới thiệu</a></li>
+                <li class="md-desktop">
+                    <a href="#">Chương trình học</a>
+                    <ul class="sub-menu">
+                        <li class="md-section-5"><a href="#">Mầm non (02-05 tuổi)</a></li>
+                        <li class="md-section-5"><a href="#">Tiền tiểu học (05-06 tuổi)</a></li>
+                        <li class="md-section-5"><a href="#">Tiểu học (06-11 tuổi)</a></li>
+                    </ul>
+                </li>
                 <li class="md-popup" data-fancybox="" data-src="#md-popup" href="javascript:;"><a href="#"><img src="./images/ico-dk.png" alt=""></a></li>
                 <div class="toggle-menu md-mobile">
                     <img src="./images/ico-tg.png" alt="">
                     <ul class="menu-mb">
-                        <li><a href="#">Giới thiệu</a></li>
-                        <li><a href="#">Chương trình học</a></li>
+                        <li><a href="#" class="md-section-1">Giới thiệu</a></li>
+                        <li>
+                            <a href="#" class="md-section-5">Chương trình học</a>
+                            <ul class="sub-menu">
+                                <li class="md-section-5"><a href="#">Mầm non (02-05 tuổi)</a></li>
+                                <li class="md-section-5"><a href="#">Tiền tiểu học (05-06 tuổi)</a></li>
+                                <li class="md-section-5"><a href="#">Tiểu học (06-11 tuổi)</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </ul>
@@ -93,8 +108,36 @@
     </header>
     <div class="page-main">
         <div class="section-1">
-            <img src="./images/img-sc1.png" alt=""  class="img-sc1 md-desktop">
-            <img src="./images/img-sc1-mb.png" alt=""  class="img-sc1 md-mobile">
+            <div class="md-top-sc1">
+                <img src="./images/img-sc1.png" alt=""  class="img-sc1 md-desktop">
+                <img src="./images/text-sc1.png" alt=""  class="text-sc1 md-desktop wow zoomInUp" data-wow-delay="0.3s" data-wow-duration="1s">
+                <img src="./images/img-sc1-mb.png" alt=""  class="img-sc1 md-mobile">
+                <img src="./images/text-sc1.png" alt=""  class="text-sc1 md-mobile wow zoomInUp" data-wow-delay="0.3s" data-wow-duration="1s">
+                <img src="./images/img-sc1-mb-child.png" alt="" class="md-mobile img-sc1-mb-child">
+                <!-- <img src="./images/img-sc1-ico-1.png" alt="" class="img-sc1-ico-1 md-mobile"> -->
+                <div class="md-popup-fc md-mobile">
+                    <div class="md-col md-col-1">
+                        <div class="fc-op"></div>
+                        <img src="./images/img-sc1-ico-1.png" alt="">
+                    </div>
+                    <div class="md-col md-col-2">
+                        <div class="fc-op"></div>
+                        <img src="./images/img-sc1-ico-2.png" alt="">
+                    </div>
+                    <div class="md-col md-col-3">
+                        <div class="fc-op"></div>
+                        <img src="./images/img-sc1-ico-3.png" alt="">
+                    </div>
+                    <div class="md-col md-col-4">
+                        <div class="fc-op"></div>
+                        <img src="./images/img-sc1-ico-4.png" alt="">
+                    </div>
+                    <div class="md-col md-col-5">
+                        <div class="fc-op"></div>
+                        <img src="./images/img-sc1-ico-5.png" alt="">
+                    </div>
+                </div>
+            </div>
             <img src="./images/img-sc2.png" alt="" class="img-sc2">
             <div class="main-section-1 clearfix">
                 <div class="container">
@@ -114,78 +157,59 @@
                 <img src="./images/img-sc4.png" alt="" class="md-desktop">
                 <img src="./images/img-sc5.png" alt="" class="md-mobile">
                 <div class="md-text">
-                    <p><span>Cô Nguyễn Thúy Uyên Phương</span> là một nhà giáo dục tâm huyết, sáng lập và vận hành nhiều dự án giáo dục đổi mới tại Việt Nam. Từ bỏ vị trí lãnh đạo tại một công ty đa quốc gia, cô khởi nghiệp với đam mê giáo dục tuổi đầu đời, đồng hành cùng phụ huynh và trẻ em.</p>
-                    <p>Với Trường Hè <span>"Skill Up Summer 2025"</span>, cô và đội ngũ TOMATO mong muốn biến mùa hè thành hành trình phát triển toàn diện cho trẻ – từ kỹ năng sống, tư duy sáng tạo đến định hướng nghề nghiệp. Với tâm huyết và tầm nhìn tiến bộ, cô cam kết đồng hành cùng Ba Mẹ để giúp các con tỏa sáng!</p>
+                    <p>Trẻ sẽ có cơ hội phát triển những kỹ năng thiết yếu mà trường học chính khóa không thể cung cấp, bao gồm: tư duy sáng tạo, kỹ năng giao tiếp, làm việc nhóm, tư duy phản biện, và kiến thức về công nghệ như trí tuệ nhân tạo (AI).</p>
+                    <p>Dành cho trẻ mầm non, tiền tiểu học và tiểu học, chương trình tập trung phát triển tư duy sáng tạo, gia tiếp, làm việc nhóm, tư duy phản biện và AI qua phương pháp học trải nghiệm. Các môn như Design Thinking (Tư duy thiết kế), Future Skills (kỹ năng tương lai), và AI Adventure (trí tuệ nhân tạo), Mindful Kids & SEL (chú tâm & điều tiết cảm xúc), Kids Camp (dã ngoại và vui chơi ngoài trời) và Modern Dance (Nhảy hiện đại) giúp trẻ vừa học, vừa chơi, vừa rèn luyện thể chất.</p>
+                    <p>Với 12 năm kinh nghiệm, TOMATO cam kết mang đến môi trường học tập an toàn, hiện đại, giúp trẻ phát triển toàn diện.</p>
                     <a href="#">Đăng ký ngay để bé có một mùa hè ý nghĩa</a>
                 </div>
                 
             </div>
         </div>
-        <div class="section-3">
+        <div class="section-3" id="section-5">
+            
             <div class="container">
-                <div class="group-tabs">
-                     <!-- Nav tabs -->
-                     <ul class="nav nav-stacked" role="tablist">
-                       <li role="presentation" class="active md-nav-1">
-                        <a href="#nav-1" aria-controls="nav-1" role="tab" data-toggle="tab" class="active">
-                           <img src="./images/nav-img-2.png" alt="">
-                           <img src="./images/nav-img-4.png" alt="">
-                        </a>
-                        </li>
-                       <li role="presentation" class="md-nav-2">
-                        <a href="#nav-2" aria-controls="nav-2" role="tab" data-toggle="tab"><img src="./images/nav-img-1.png" alt=""><img src="./images/nav-img-5.png" alt=""></a>          
-                       </li>
-                       <li role="presentation" class="md-nav-2"><a href="#nav-3" aria-controls="nav-3" role="tab" data-toggle="tab"><img src="./images/nav-img-3.png" alt=""><img src="./images/nav-img-6.png" alt=""></a></li>
-                       
-                     </ul>
-                     <!-- Tab panes -->
-                     <div class="tab-content">
-                       <div role="tabpanel" class="tab-pane clearfix active" id="nav-1">
-                            <div class="main-content">
-                                <div class="md-row clearfix">
-                                    <img src="./images/ico-1.png" alt="">
-                                    <div class="md-text">
-                                        <h6>Học mà chơi, chơi mà học:</h6>
-                                        <p>Chương trình dành riêng cho trẻ 3-5 tuổi, kết hợp nghệ thuật, vận động, dã ngoại giúp bé tiếp thu tự nhiên, không áp lực.</p>
-                                    </div>
-                                </div>
-                                <div class="md-row clearfix">
-                                    <img src="./images/ico-1.png" alt="">
-                                    <div class="md-text">
-                                        <h6>Học mà chơi, chơi mà học:</h6>
-                                        <p>Chương trình dành riêng cho trẻ 3-5 tuổi, kết hợp nghệ thuật, vận động, dã ngoại giúp bé tiếp thu tự nhiên, không áp lực.</p>
-                                    </div>
-                                </div>
-                                <div class="md-row clearfix">
-                                    <img src="./images/ico-1.png" alt="">
-                                    <div class="md-text">
-                                        <h6>Học mà chơi, chơi mà học:</h6>
-                                        <p>Chương trình dành riêng cho trẻ 3-5 tuổi, kết hợp nghệ thuật, vận động, dã ngoại giúp bé tiếp thu tự nhiên, không áp lực.</p>
-                                    </div>
-                                </div>
-                                <div class="md-row clearfix">
-                                    <img src="./images/ico-1.png" alt="">
-                                    <div class="md-text">
-                                        <h6>Học mà chơi, chơi mà học:</h6>
-                                        <p>Chương trình dành riêng cho trẻ 3-5 tuổi, kết hợp nghệ thuật, vận động, dã ngoại giúp bé tiếp thu tự nhiên, không áp lực.</p>
-                                    </div>
-                                </div>
-                                <div class="md-row clearfix">
-                                    <img src="./images/ico-1.png" alt="">
-                                    <div class="md-text">
-                                        <h6>Học mà chơi, chơi mà học:</h6>
-                                        <p>Chương trình dành riêng cho trẻ 3-5 tuổi, kết hợp nghệ thuật, vận động, dã ngoại giúp bé tiếp thu tự nhiên, không áp lực.</p>
-                                    </div>
-                                </div>
-                                <img src="./images/tkb-1.jpg" alt="" class="md-tkb md-desktop">
-                                <a data-fancybox="" data-src="#md-popup-tkb" href="javascript:;"><img src="./images/ico-tkb.png" alt="" class="md-mobile md-tkb"></a>
-                                <div id="md-popup-tkb" class="main-popup-tkb">
-                                    <img src="./images/tkb-1.jpg" alt="">
-                                </div>
-                            </div>
-                       </div>
-                       <div role="tabpanel" class="tab-pane" id="nav-2">
-                            <div class="main-content">
+                <div id="accordion" class="clearfix">
+                  <div class="md-row clearfix">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              <img src="./images/nav-img-2.png" alt="">
+                              <img src="./images/ico-button-3.png" alt="" class="md-button-3">
+                            </button>
+                          </h5>
+                        </div>
+
+                        
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwo">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <img src="./images/nav-img-3.png" alt="">
+                              <img src="./images/ico-button-3.png" alt="" class="md-button-3">
+                            </button>
+                          </h5>
+                        </div>
+                        
+                      </div>
+                      <div class="card md-card-2">
+                        <div class="card-header" id="headingThree">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              <img src="./images/nav-img-1.png" alt="">
+                              <img src="./images/ico-button-3.png" alt="" class="md-button-3">
+                            </button>
+                          </h5>
+                        </div>
+                        
+                      </div>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <img src="./images/nav-img-4.png" alt="" class="img-nav-tab">
+                      <div class="main-content">
+
                                 <div class="md-row clearfix">
                                     <img src="./images/ico-1.png" alt="">
                                     <div class="md-text">
@@ -222,14 +246,64 @@
                                     </div>
                                 </div>
                                 <img src="./images/tkb-2.jpg" alt="" class="md-tkb md-desktop">
-                                <a data-fancybox="" data-src="#md-popup-tkb-2" href="javascript:;"><img src="./images/ico-tkb.png" alt="" class="md-mobile md-tkb"></a>
-                                <div id="md-popup-tkb-2" class="main-popup-tkb">
+                                <a data-fancybox="" data-src="#md-popup-tkb" href="javascript:;"><img src="./images/ico-tkb.png" alt="" class="md-mobile md-tkb"></a>
+                                <div id="md-popup-tkb" class="main-popup-tkb">
                                     <img src="./images/tkb-2.jpg" alt="">
                                 </div>
                             </div>
-                       </div>
-                       <div role="tabpanel" class="tab-pane" id="nav-3">
-                            <div class="main-content">
+                    </div>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <img src="./images/nav-img-5.png" alt="" class="img-nav-tab">
+                      <div class="main-content">
+                                <div class="md-row clearfix">
+                                    <img src="./images/ico-1.png" alt="">
+                                    <div class="md-text">
+                                        <h6>Học mà chơi, chơi mà học:</h6>
+                                        <p>Chương trình dành riêng cho trẻ 3-5 tuổi, kết hợp nghệ thuật, vận động, dã ngoại giúp bé tiếp thu tự nhiên, không áp lực.</p>
+                                    </div>
+                                </div>
+                                <div class="md-row clearfix">
+                                    <img src="./images/ico-1.png" alt="">
+                                    <div class="md-text">
+                                        <h6>Học mà chơi, chơi mà học:</h6>
+                                        <p>Chương trình dành riêng cho trẻ 3-5 tuổi, kết hợp nghệ thuật, vận động, dã ngoại giúp bé tiếp thu tự nhiên, không áp lực.</p>
+                                    </div>
+                                </div>
+                                <div class="md-row clearfix">
+                                    <img src="./images/ico-1.png" alt="">
+                                    <div class="md-text">
+                                        <h6>Học mà chơi, chơi mà học:</h6>
+                                        <p>Chương trình dành riêng cho trẻ 3-5 tuổi, kết hợp nghệ thuật, vận động, dã ngoại giúp bé tiếp thu tự nhiên, không áp lực.</p>
+                                    </div>
+                                </div>
+                                <div class="md-row clearfix">
+                                    <img src="./images/ico-1.png" alt="">
+                                    <div class="md-text">
+                                        <h6>Học mà chơi, chơi mà học:</h6>
+                                        <p>Chương trình dành riêng cho trẻ 3-5 tuổi, kết hợp nghệ thuật, vận động, dã ngoại giúp bé tiếp thu tự nhiên, không áp lực.</p>
+                                    </div>
+                                </div>
+                                <div class="md-row clearfix">
+                                    <img src="./images/ico-1.png" alt="">
+                                    <div class="md-text">
+                                        <h6>Học mà chơi, chơi mà học:</h6>
+                                        <p>Chương trình dành riêng cho trẻ 3-5 tuổi, kết hợp nghệ thuật, vận động, dã ngoại giúp bé tiếp thu tự nhiên, không áp lực.</p>
+                                    </div>
+                                </div>
+                                <img src="./images/tkb-1.jpg" alt="" class="md-tkb md-desktop">
+                                <a data-fancybox="" data-src="#md-popup-tkb-2" href="javascript:;"><img src="./images/ico-tkb.png" alt="" class="md-mobile md-tkb"></a>
+                                <div id="md-popup-tkb-2" class="main-popup-tkb">
+                                    <img src="./images/tkb-1.jpg" alt="">
+                                </div>
+                            </div>
+                    </div>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <img src="./images/nav-img-6.png" alt="" class="img-nav-tab">
+                      <div class="main-content">
                                 <div class="md-row clearfix">
                                     <img src="./images/ico-1.png" alt="">
                                     <div class="md-text">
@@ -271,93 +345,209 @@
                                     <img src="./images/tkb-3.jpg" alt="">
                                 </div>
                             </div>
-                       </div>
-            </div>
-                   
+                    </div>
+                  </div>
                 </div>
+
             </div>
         </div>
         <div class="section-4">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-6">
-                        <img src="./images/img-sc6.png" alt="">
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <img src="./images/img-sc6.png" alt="">
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <img src="./images/img-sc6.png" alt="">
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <img src="./images/img-sc6.png" alt="">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 col-6">
-                        <img src="./images/img-sc6.png" alt="">
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <img src="./images/img-sc6.png" alt="">
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <img src="./images/img-sc6.png" alt="">
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <img src="./images/img-sc6.png" alt="">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 col-6">
-                        <img src="./images/img-sc6.png" alt="">
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <img src="./images/img-sc6.png" alt="">
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <img src="./images/img-sc6.png" alt="">
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <img src="./images/img-sc6.png" alt="">
-                    </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><img src="./images/file-mamnon/slide-30.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-31.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-32.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-33.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-34.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-1.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-2.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-3.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-4.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-5.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-6.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-7.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-8.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-9.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-10.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-11.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-12.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-13.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-14.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-15.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-16.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-17.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-18.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-19.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-20.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-21.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-22.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-23.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-24.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-25.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-26.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-27.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-28.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-29.jpg" alt=""></div>
+                    
+                    <div class="item"><img src="./images/file-mamnon/slide-35.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-36.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-37.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-38.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-39.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-40.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-41.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-42.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-43.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-44.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-45.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-46.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-47.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-48.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-49.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-50.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-51.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-52.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-53.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-54.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-55.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-56.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-57.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-58.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-59.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-60.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-61.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-62.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-63.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-64.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-65.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-66.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-67.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-68.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-69.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-70.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-71.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-72.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-73.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-74.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-75.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-76.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-77.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-78.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-79.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-80.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-81.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-82.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-83.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-84.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-85.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-86.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-87.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-88.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-89.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-90.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-91.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-92.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-93.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-94.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-95.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-96.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-97.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-98.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-99.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-100.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-101.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-102.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-103.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-104.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-mamnon/slide-105.jpg" alt=""></div>
                 </div>
             </div>
         </div>
         <div class="section-5">
             <div class="container">
-                <div class="md-row">
-                    <h6>Cảm nhận của Ba mẹ<br>về Khóa Hè 2024</h6>
-                    <div class="row">
-                        <div class="col-md-3 col-6">
-                            <img src="./images/img-sc7.png" alt="">
-                        </div>
-                        <div class="col-md-3 col-6">
-                            <img src="./images/img-sc8.png" alt="">
-                        </div>
-                        <div class="col-md-3 col-6">
-                            <img src="./images/img-sc9.png" alt="">
-                        </div>
-                        <div class="col-md-3 col-6">
-                            <img src="./images/img-sc10.png" alt="">
-                        </div>
-                    </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><img src="./images/file-tientieuhoc/slide-1.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tientieuhoc/slide-2.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tientieuhoc/slide-3.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tientieuhoc/slide-4.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tientieuhoc/slide-5.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tientieuhoc/slide-6.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tientieuhoc/slide-7.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tientieuhoc/slide-8.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tientieuhoc/slide-9.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tientieuhoc/slide-10.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tientieuhoc/slide-11.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tientieuhoc/slide-12.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tientieuhoc/slide-13.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tientieuhoc/slide-14.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tientieuhoc/slide-15.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tientieuhoc/slide-16.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tientieuhoc/slide-17.jpg" alt=""></div> 
+                    <div class="item"><img src="./images/file-tientieuhoc/slide-18.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tientieuhoc/slide-19.jpg" alt=""></div>
                 </div>
-                <div class="md-row">
-                    <h6>Cảm nhận của các bé Mầm Non, Tiền Tiểu Học và Tiểu Học<br>về Khóa Hè 2024</h6>
-                    <div class="row">
-                        <div class="col-md-3 col-6">
-                            <img src="./images/img-sc7.png" alt="">
-                        </div>
-                        <div class="col-md-3 col-6">
-                            <img src="./images/img-sc8.png" alt="">
-                        </div>
-                        <div class="col-md-3 col-6">
-                            <img src="./images/img-sc9.png" alt="">
-                        </div>
-                        <div class="col-md-3 col-6">
-                            <img src="./images/img-sc10.png" alt="">
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="section-6">
+            <div class="container">
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><img src="./images/file-tieuhoc/bct_4036.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tieuhoc/bct_4046.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tieuhoc/bct_4051.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tieuhoc/bct_4068.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tieuhoc/bct_4024.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tieuhoc/bct_4025.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tieuhoc/bct_4026.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tieuhoc/bct_4027.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tieuhoc/bct_4028.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tieuhoc/bct_4029.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tieuhoc/bct_4030.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tieuhoc/bct_4031.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tieuhoc/bct_4032.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tieuhoc/bct_4033.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tieuhoc/bct_4034.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tieuhoc/bct_4035.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tieuhoc/bct_4036.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tieuhoc/bct_4037.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tieuhoc/bct_4038.jpg" alt=""></div>
+                    <div class="item"><img src="./images/file-tieuhoc/bct_4039.jpg" alt=""></div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="section-7">
+            <h6>Cảm nhận của Ba mẹ<br>về Khóa Hè 2024</h6>
+            <div class="container">
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><img src="./images/file-bame/slide-9.jpg" alt=""></div> 
+                    <div class="item"><img src="./images/file-bame/slide-10.jpg" alt=""></div>      
+                    <div class="item"><img src="./images/file-bame/slide-11.jpg" alt=""></div> 
+                    <div class="item"><img src="./images/file-bame/slide-12.jpg" alt=""></div>   
+                    <div class="item"><img src="./images/file-bame/slide-1.jpg" alt=""></div> 
+                    <div class="item"><img src="./images/file-bame/slide-2.jpg" alt=""></div> 
+                    <div class="item"><img src="./images/file-bame/slide-3.jpg" alt=""></div> 
+                    <div class="item"><img src="./images/file-bame/slide-4.jpg" alt=""></div> 
+                    <div class="item"><img src="./images/file-bame/slide-5.jpg" alt=""></div> 
+                    <div class="item"><img src="./images/file-bame/slide-6.jpg" alt=""></div> 
+                    <div class="item"><img src="./images/file-bame/slide-7.jpg" alt=""></div> 
+                    <div class="item"><img src="./images/file-bame/slide-8.jpg" alt=""></div> 
+                                
+                </div>
+            </div>
+        </div>
+        <div class="section-8">
+            <h6>Cảm nhận của các bé Mầm Non, Tiền Tiểu Học và Tiểu Học<br>về Khóa Hè 2024</h6>
+            <div class="container">
+                <div class="owl-carousel owl-theme">  
+                    <div class="item"><img src="./images/file-hocsinh/slide-1.jpg" alt=""></div> 
+                    <div class="item"><img src="./images/file-hocsinh/slide-2.jpg" alt=""></div> 
+                    <div class="item"><img src="./images/file-hocsinh/slide-3.jpg" alt=""></div> 
+                    <div class="item"><img src="./images/file-hocsinh/slide-4.jpg" alt=""></div> 
+                    <div class="item"><img src="./images/file-hocsinh/slide-5.jpg" alt=""></div> 
+                    <div class="item"><img src="./images/file-hocsinh/slide-6.jpg" alt=""></div> 
+                    <div class="item"><img src="./images/file-hocsinh/slide-7.jpg" alt=""></div> 
+                    <div class="item"><img src="./images/file-hocsinh/slide-8.jpg" alt=""></div> 
+                                
                 </div>
             </div>
         </div>
@@ -368,57 +558,66 @@
             <img src="./images/bg-bottom-mb.png" alt="" class="bg-bottom md-mobile">
             <div class="container">
                  <div class="md-row">
-                     <div class="md-col clearfix">
-                        <img src="./images/ico-pl.png" alt="">
-                        <div class="md-text">
-                            <h6>TOMATO Phú Nhuận</h6>
-                            <p>329/5 Nguyễn Trọng Tuyển, P10, Q.Phú Nhuận, TP.HCM.</p>
+                    <div class="md-left">
+                        <div class="md-col clearfix">
+                           <img src="./images/ico-pl.png" alt="">
+                           <div class="md-text">
+                               <h6>TOMATO Phú Nhuận</h6>
+                               <p>329/5 Nguyễn Trọng Tuyển, P10, Q.Phú Nhuận, TP.HCM.</p>
+                           </div>
                         </div>
-                     </div>
-                     <div class="md-col clearfix">
-                        <img src="./images/ico-pl.png" alt="">
-                        <div class="md-text">
-                            <h6>TOMATO SALA</h6>
-                            <p>90-92 đường B2, Khu đô thị SALA, TP. Thủ Đức, TPHCM.</p>
+                        <div class="md-col clearfix">
+                           <img src="./images/ico-pl.png" alt="">
+                           <div class="md-text">
+                               <h6>TOMATO SALA</h6>
+                               <p>90-92 đường B2, Khu đô thị SALA, TP. Thủ Đức, TPHCM.</p>
+                           </div>
                         </div>
-                     </div>
-                     <div class="md-col clearfix">
-                        <img src="./images/ico-pl.png" alt="">
-                        <div class="md-text">
-                            <h6>TOMATO Quận 9</h6>
-                            <p>500 Liên Phường, P. Phước Long B, TP. Thủ Đức, TPHCM.</p>
+                        <div class="md-col clearfix">
+                           <img src="./images/ico-pl.png" alt="">
+                           <div class="md-text">
+                               <h6>TOMATO Quận 9</h6>
+                               <p>500 Liên Phường, P. Phước Long B, TP. Thủ Đức, TPHCM.</p>
+                           </div>
                         </div>
-                     </div>
-                     <div class="md-col clearfix">
-                        <img src="./images/ico-pl.png" alt="">
-                        <div class="md-text">
-                            <h6>TOMATO Quận 7</h6>
-                            <p>Số 6 đường Số 1, KDC CityLand - 99 Nguyễn Thị Thập, P. Tân Phú, Q.7, TP.HCM.</p>
+                        <div class="md-col clearfix">
+                           <img src="./images/ico-pl.png" alt="">
+                           <div class="md-text">
+                               <h6>TOMATO Quận 7</h6>
+                               <p>Số 6 đường Số 1, KDC CityLand - 99 Nguyễn Thị Thập, P. Tân Phú, Q.7, TP.HCM.</p>
+                           </div>
                         </div>
-                     </div>
+                    </div>
+                    <div class="md-right">
+                        <div class="md-col">
+                            <ul>                           
+                                <li><a href="https://www.facebook.com/TruongTOMATO"><img src="./images/ico-ft-2.png" alt=""></a></li>
+                                <li><a href="https://www.youtube.com/@TOMATOChildrensHome"><img src="./images/ico-ft-3.png" alt=""></a></li>
+                                <li><a href="https://zalo.me/3564837583900344766"><img src="./images/ico-ft-4.png" alt=""></a></li>
+                                <li><a href="https://www.tiktok.com/@tomatochildrenshome"><img src="./images/ico-ft-5.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="md-col md-col-2">
+                            <a href="http://www.tomato.edu.vn"><img src="./images/ico-ft-1.png" alt=""><span>www.tomato.edu.vn</span></a>
+                        </div>
+                        <div class="md-col">
+                            <div class="md-time clearfix">
+                                <img src="./images/ico-ft-6.png" alt="">
+                                <div class="md-text">
+                                    <p>Giờ hoạt động</p>
+                                    <span>+ Thứ Hai - Thứ Bảy: Từ 08h00 đến 17h30</span>
+                                    <span>+ Chủ Nhật: Từ 08h00 đến 12h00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                  </div>
-                 <img src="./images/ico-phone.png" alt="" class="ico-phone">
+                 <a href="tel:0906616212"><img src="./images/ico-phone.png" alt="" class="ico-phone"></a>
             </div>
         </div>
-        <div class="bot-footer">
-            <div class="container">
-                <ul>
-                    <li class="md-desktop"><a href="#"><img src="./images/ico-ft-1.png" alt=""><span>www.tomato.edu.vn</span></a></li>
-                    <li><a href="#"><img src="./images/ico-ft-2.png" alt=""></a></li>
-                    <li><a href="#"><img src="./images/ico-ft-3.png" alt=""></a></li>
-                    <li><a href="#"><img src="./images/ico-ft-4.png" alt=""></a></li>
-                    <li><a href="#"><img src="./images/ico-ft-5.png" alt=""></a></li>
-                </ul>
-                <a href="#" class="md-mobile md-wb clearfix"><img src="./images/ico-ft-1.png" alt=""><span>www.tomato.edu.vn</span></a>
-                <div class="md-time clearfix">
-                    <img src="./images/ico-ft-6.png" alt="">
-                    <div class="md-text">
-                        <p>Giờ hoạt động</p>
-                        <span>+ Thứ Hai - Thứ Bảy: Từ 08h00 đến 17h30</span>
-                        <span>+ Chủ Nhật: Từ 08h00 đến 12h00</span>
-                    </div>
-                </div>
-            </div>
+        <div class="md-fixed clearfix">
+            <a href="tel:0906616212"><img src="./images/ico-phone-2.png" alt=""></a>
+            <a href="https://m.me/357242751046573?fbclid=IwZXh0bgNhZW0CMTAAAR1tvWcCcguaM4wNrCCKR0UiIQ1_zu50K4ptaR988apJSTiwGjHClv8VtFg_aem_Z0dD1fQfb8vv-WjkwRr37g"><img src="./images/ico-mess.png" alt=""></a>
         </div>
     </footer>
 </body>
