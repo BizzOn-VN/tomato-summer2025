@@ -384,7 +384,9 @@ input[type=submit] {
   padding: 0px;
 }
 .section-3 .card img{
-  width: 100%;
+  width: 80%;
+  display: table;
+  margin: 0 auto;
 }
 .section-3 .card-body{
   padding: 0px;
@@ -404,10 +406,7 @@ input[type=submit] {
   margin-bottom: 40px;
 }
 .section-3 .card-body .main-content{
-  background: #FFF;
-  padding: 40px 50px 40px;
-  border: 2px solid #76c04d;
-  border-radius: 20px;
+  
 }
 .section-3 .card-body .img-nav-tab{
   width: 31%;
@@ -421,7 +420,8 @@ input[type=submit] {
 }
 .section-3 .main-content .md-tkb{
   width: 100%;
-  margin-top: 50px;
+  margin-top: 20px;
+  border-radius: 30px;
 }
 .section-3 .main-content .md-row{
   margin-bottom: 10px;
@@ -575,51 +575,58 @@ input[type=submit] {
 }
 .md-fixed{
   position: fixed;
-  right: 3%;
-  bottom: 3%;
-  width: 10%;
+  right: 1%;
+  bottom: 1%;
+  width: 3%;
   z-index: 999;
 }
+.md-fixed a:first-child{
+  margin-bottom: 10px;
+}
 .md-fixed a{
-  float: left;
-  width: 40%;
   animation: md-fixeda infinite 4s;
+  display: block;
 }
 @keyframes md-fixeda{
   0%{
-    opacity: 1;
+    transform: scale(1.1);
   }
   5%{
-    opacity: 0;
+    transform: scale(1.2);
   }
   10%{
-    opacity: 1;
+    transform: scale(1.1);
   }
   15%{
-    opacity: 0;
+    transform: scale(1.2);
   }
   20%{
-    opacity: 1;
+    transform: scale(1.1);
   }
   25%{
-    opacity: 0;
+    transform: scale(1.2);
   }
   30%{
-    opacity: 1;
+    transform: scale(1.1);
   }
   100%{
-    opacity: 1;
+    transform: scale(1.1);
   }
-}
-.md-fixed a:first-child{
-  margin-right: 20%;
-
-}
-.md-fixed a:last-child{
-  animation-delay: 1s;
 }
 .md-fixed img{
   width: 100%;
+}
+.owl-carousel .owl-item img{
+  background: url(../images/khung-anh.png) no-repeat;
+  background-size: 100% 100%;
+  padding: 5px 3px 20px;
+  border-radius: 30px 30px 0px 0px;
+}
+.banner .owl-carousel .owl-item img{
+  background: none;
+  background-size: 100% 100%;
+  padding: 0px;
+  border-radius: 0px;
 }
 .md-desktop{
     display: block;
@@ -826,13 +833,18 @@ input[type=submit] {
     width: 92%;
     margin-top: 0px;
   }
-  .section-3 .card-body .main-content{
-    padding: 30px 20px;
-  }
   .section-3 .main-content .md-tkb{
+    margin: 10px auto 0 auto;
+  }
+  .section-3 .main-content{
+    position: relative;
+  }
+  .section-3 .main-content .md-tkb-mb{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2%;
     width: 60%;
-    display: table;
-    margin: 30px auto 0 auto;
   }
   .section-1 .md-top-sc1 .img-sc1-mb-child{
         position: absolute;
@@ -896,7 +908,7 @@ input[type=submit] {
     transition-duration: 0.5s;
   }
   .md-fixed{
-    width: 25%;
+    width: 10%;
   }
   .footer .top-footer .ico-phone{
     right: auto;
