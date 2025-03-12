@@ -200,12 +200,14 @@ input[type=submit] {
   padding: 15px 20px;
 }
 .main-popup form input[type='button']{
-  width: 33%;
   display: table;
   margin: 20px auto 0 auto;
   background: url(../images/ico-button.png) no-repeat;
   background-size: 100% auto;
   border: none;
+  padding: 10px 25px;
+  color: #FFF;
+  width: auto;
 }
 .main-popup form .ui.dropdown{
   background: #FFF;
@@ -221,8 +223,11 @@ input[type=submit] {
   top: 50%;
   transform: translateY(-50%);
 }
+
 .main-popup .ui.dropdown .menu{
   width: 100%;
+  top: auto;
+  bottom: 100%;
 }
 .page-main{
   background: url(../images/bg-pagemain.jpg) no-repeat;
@@ -776,9 +781,9 @@ input[type=submit] {
   .scroll-top{
     padding: 10px 10% !important;
   }
-  .main-popup form input[type='button']{
+  /*.main-popup form input[type='button']{
     width: 50%;
-  }
+  }*/
   .page-header .main-menu li .sub-menu{
     padding-right: 10%;
     background: none;
