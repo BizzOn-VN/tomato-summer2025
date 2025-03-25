@@ -149,7 +149,7 @@ $('.ui.dropdown')
   .dropdown()
 ;
 
-$("#md-popup-2").fancybox().trigger('click');
+// $("#md-popup-2").fancybox().trigger('click');
 
 $('.toggle-menu').click(function(){
     $('.menu-mb').toggleClass('active');
@@ -191,6 +191,13 @@ $(".md-section-6").click(function() {
         scrollTop: $("#section-6").offset().top - 120
     }, 1000);
 });
+
+$(".md-section-7").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#section-7").offset().top - 60
+    }, 1000);
+});
+
 
 $(window).scroll(function(){
     if ($(window).scrollTop() >= 90) {
