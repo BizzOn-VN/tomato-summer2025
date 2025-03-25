@@ -25,8 +25,8 @@ jQuery(document).on("ready",function () {
     $('.banner .owl-carousel').owlCarousel({
         loop:true,
         margin:10,
-        autoplay:false,
-        autoplayTimeout: 3000,
+        autoplay:true,
+        autoplayTimeout: 5000,
         autoplayHoverPause:false,
         nav:false,
         responsive:{
@@ -47,7 +47,7 @@ jQuery(document).on("ready",function () {
     margin:10,
     nav:false,
     autoplay:true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 5000,
         autoplayHoverPause:false,
         dots:false,
     responsive:{
@@ -69,7 +69,7 @@ jQuery(document).on("ready",function () {
         margin:10,
         nav:false,
         autoplay:true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 5000,
         autoplayHoverPause:false,
         responsive:{
                 0:{
@@ -89,7 +89,7 @@ jQuery(document).on("ready",function () {
     margin:10,
     nav:false,
     autoplay:true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 5000,
         autoplayHoverPause:false,
         responsive:{
                 0:{
@@ -109,7 +109,7 @@ jQuery(document).on("ready",function () {
         margin:10,
         nav:false,
         autoplay:true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 5000,
         autoplayHoverPause:false,
         responsive:{
             0:{
@@ -129,7 +129,7 @@ jQuery(document).on("ready",function () {
         margin:10,
         nav:false,
         autoplay:true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 5000,
         autoplayHoverPause:false,
         responsive:{
             0:{
@@ -177,6 +177,18 @@ $(".md-section-4").click(function() {
 $(".md-section-3").click(function() {
     $('html, body').animate({
         scrollTop: $("#section-3").offset().top - 60
+    }, 1000);
+});
+
+$(".md-section-5").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#section-5").offset().top - 60
+    }, 1000);
+});
+
+$(".md-section-6").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#section-6").offset().top - 120
     }, 1000);
 });
 

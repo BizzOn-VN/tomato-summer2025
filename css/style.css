@@ -46,6 +46,7 @@ ul li {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
    font-family: "Baloo 2", sans-serif;
+   font-weight: 700;
 }
 
 p {
@@ -178,7 +179,7 @@ input[type=submit] {
   border-bottom: 1.5px solid #a6a6a64a;
   background: #FFF;
   width: 90% !important;
-  padding: 10px 10% !important;
+  padding: 10px 8% !important;
   left: 50%;
   transform: translateX(-50%);
   margin: 10px 0px !important;
@@ -271,6 +272,7 @@ input[type=submit] {
   text-transform: uppercase;
   margin: 0 auto;
   display: table;
+  animation: img-phone 4s infinite;
 }
 .ico-button-4:hover{
   color: #FFF;
@@ -334,11 +336,11 @@ input[type=submit] {
   padding: 20px 20px 0px 20px;
 }
 .page-main .section-3 .col-md-3 span{
-  font-size: calc(6px + 1vw);
+  font-size: calc(4px + 1vw);
   text-transform: uppercase;
   line-height: 1.2;
   display: block;
-  padding: 0px 20px 20px 20px;
+  padding: 0px 15px 20px 15px;
   color: #404041;
   font-weight: 700;
 }
@@ -398,6 +400,8 @@ input[type=submit] {
   text-align: center;
   margin-top: 20px;
   font-size: calc(20px + 2vw);
+  color: #FD6718;
+  font-weight: 700;
 }
 .page-main .section-5 .ico-button-4{
   margin-top: 20px;
@@ -416,6 +420,7 @@ input[type=submit] {
 .page-main .section-6 img{
   width: 100%;
   margin-bottom: 20px;
+  border-radius: 50px;
 }
 .page-main .section-6 .md-text{
   float: left;
@@ -866,6 +871,22 @@ p.error{
   }
 }
 
+@media screen and (min-width: 1599px){
+  .page-header .main-menu li{
+    margin-right: 70px;
+  }
+  .scroll-top{
+    padding: 10px 7% !important;
+  }
+}
+@media screen and (min-width: 1899px){
+  .page-header .main-menu li{
+    margin-right: 54px;
+  }
+  .scroll-top{
+    padding: 10px 12.5% !important;
+  }
+}
 /*font-family: "Paytone One", sans-serif;
 font-family: "Alata", sans-serif;
  font-family: "Baloo 2", sans-serif;*/
