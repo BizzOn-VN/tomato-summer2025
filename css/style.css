@@ -334,13 +334,14 @@ input[type=submit] {
   line-height: 1;
   font-weight: 700;
   padding: 20px 20px 0px 20px;
+  margin-bottom: 0px;
 }
 .page-main .section-3 .col-md-3 span{
-  font-size: calc(4px + 1vw);
+  font-size: calc(12px + 1vw);
   text-transform: uppercase;
   line-height: 1.2;
   display: block;
-  padding: 0px 15px 20px 15px;
+  padding: 0px 10px 20px 10px;
   color: #404041;
   font-weight: 700;
 }
