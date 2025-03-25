@@ -807,7 +807,7 @@ p.error{
     padding: 20px;
   }
   .page-main .section-3 .main-content .md-col{
-    padding: 20px;
+    padding: 15px;
   }
   .page-main .section-3 .main-content .md-col{
     width: 48%;
@@ -826,7 +826,7 @@ p.error{
     top: 20px;
   }
   .page-main .section-3 .main-content .md-col span{
-    font-size: calc(8px + 2vw);
+    font-size: calc(7px + 2vw);
   }
   .page-main .section-3{
     background: transparent;
