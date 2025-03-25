@@ -684,6 +684,21 @@ p.error{
 .md-mobile{
     display: none;
 }
+
+.md-popup-2{
+  display: none;
+  padding: 0px;
+  width: 50%;
+}
+.md-popup-2 img{
+  width: 100%;
+}
+.md-popup-2 .ico-button-4{
+  margin-bottom: 20px;
+  padding: 7px 15px;
+  font-size: calc(3px + 1vw);
+  animation: none;
+}
 @media screen and (max-width: 767px){
   .md-desktop{
       display: none !important;
@@ -696,6 +711,9 @@ p.error{
   }
   .md-popup-2{
     width: 100%;
+  }
+  .md-popup-2 .ico-button-4{
+    font-size: calc(8px + 1vw);
   }
   .main-popup{
     width: 100%;
