@@ -149,7 +149,7 @@ $('.ui.dropdown')
   .dropdown()
 ;
 
-// $("#md-popup-2").fancybox().trigger('click');
+$("#md-popup-2").fancybox().trigger('click');
 
 $('.toggle-menu').click(function(){
     $('.menu-mb').toggleClass('active');
