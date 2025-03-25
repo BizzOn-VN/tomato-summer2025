@@ -25,7 +25,7 @@ jQuery(document).on("ready",function () {
     $('.banner .owl-carousel').owlCarousel({
         loop:true,
         margin:10,
-        autoplay:true,
+        autoplay:false,
         autoplayTimeout: 3000,
         autoplayHoverPause:false,
         nav:false,
@@ -49,15 +49,16 @@ jQuery(document).on("ready",function () {
     autoplay:true,
         autoplayTimeout: 3000,
         autoplayHoverPause:false,
+        dots:false,
     responsive:{
         0:{
             items:1
         },
         600:{
-            items:2
+            items:1
         },
         1000:{
-            items:4
+            items:1
         }
     }
 
@@ -65,26 +66,25 @@ jQuery(document).on("ready",function () {
 
     $('.section-5 .owl-carousel').owlCarousel({
         loop:true,
-    margin:10,
-    nav:false,
-    autoplay:true,
+        margin:10,
+        nav:false,
+        autoplay:true,
         autoplayTimeout: 3000,
         autoplayHoverPause:false,
-    video:true,
         responsive:{
                 0:{
-                    items:1
+                    items:2
                 },
                 600:{
                     items:2
                 },
                 1000:{
-                    items:4
+                    items:3
                 }
             }
     })
 
-    $('.section-6 .owl-carousel').owlCarousel({
+    $('.section-7 .owl-carousel').owlCarousel({
         loop:true,
     margin:10,
     nav:false,
@@ -99,12 +99,12 @@ jQuery(document).on("ready",function () {
                     items:2
                 },
                 1000:{
-                    items:4
+                    items:2.5
                 }
             }
     })
 
-    $('.section-7 .owl-carousel').owlCarousel({
+    $('.section-8 .owl-carousel').owlCarousel({
         loop:true,
         margin:10,
         nav:false,
@@ -116,10 +116,10 @@ jQuery(document).on("ready",function () {
                 items:1
             },
             600:{
-                items:2
+                items:1
             },
             1000:{
-                items:4
+                items:1
             }
         }
     })
@@ -155,31 +155,28 @@ $('.toggle-menu').click(function(){
     $('.menu-mb').toggleClass('active');
 });
 
-$('.section-1 .md-top-sc1 .md-popup-fc .md-col-1').click(function(){
-    $('.section-1 .md-top-sc1 .md-popup-fc .md-col-1 img').toggleClass('active-1');
-});
-$('.section-1 .md-top-sc1 .md-popup-fc .md-col-2').click(function(){
-    $('.section-1 .md-top-sc1 .md-popup-fc .md-col-2 img').toggleClass('active-1');
-});
-$('.section-1 .md-top-sc1 .md-popup-fc .md-col-3').click(function(){
-    $('.section-1 .md-top-sc1 .md-popup-fc .md-col-3 img').toggleClass('active-1');
-});
-$('.section-1 .md-top-sc1 .md-popup-fc .md-col-4').click(function(){
-    $('.section-1 .md-top-sc1 .md-popup-fc .md-col-4 img').toggleClass('active-1');
-});
-$('.section-1 .md-top-sc1 .md-popup-fc .md-col-5').click(function(){
-    $('.section-1 .md-top-sc1 .md-popup-fc .md-col-5 img').toggleClass('active-1');
-});
 
 $(".md-section-1").click(function() {
     $('html, body').animate({
-        scrollTop: $(".section-1").offset().top - 60
+        scrollTop: $("#section-1").offset().top - 60
     }, 1000);
 });
 
-$(".md-section-5").click(function() {
+$(".md-section-2").click(function() {
     $('html, body').animate({
-        scrollTop: $(".section-3").offset().top - 60
+        scrollTop: $("#section-2").offset().top - 60
+    }, 1000);
+});
+
+$(".md-section-4").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#section-2").offset().top - 60
+    }, 1000);
+});
+
+$(".md-section-3").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#section-3").offset().top - 60
     }, 1000);
 });
 

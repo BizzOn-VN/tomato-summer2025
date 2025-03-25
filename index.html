@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="vendor/wow/animation.css" rel="stylesheet" type="text/css">
     <link href="vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet" type="text/css">
     <link href="vendor/owlcarousel/owl.theme.default.min.css" rel="stylesheet" type="text/css">
@@ -20,379 +21,285 @@
 <body>
     <header class="page-header">
         <div class="container">
-            <ul class="main-menu">
-                <li><a href="#"><img src="./images/logo.png" alt=""></a></li>
-                <li class="md-desktop" ><a href="#" class="md-section-1">Giới thiệu</a></li>
-                <li class="md-desktop">
+            <ul class="main-menu clearfix">
+                <li class="logo"><a href="#"><img src="./images/logo.png" alt=""></a></li>
+                <li class="md-desktop pd-top" ><a href="#" >Ưu đãi</a></li>
+                <li class="md-desktop pd-top">
                     <a href="#">Chương trình học</a>
                     <ul class="sub-menu">
-                        <li class="md-section-5"><a href="#">Mầm non (02-05 tuổi)</a></li>
-                        <li class="md-section-5"><a href="#">Tiền tiểu học (05-06 tuổi)</a></li>
-                        <li class="md-section-5"><a href="#">Tiểu học (06-11 tuổi)</a></li>
+                        <li class="md-section-5"><a href="#" class="md-section-2">5 nhóm kỹ năng thiết yếu</a></li>
+                        <li class="md-section-5"><a href="#" class="md-section-3">6 tuần trải nghiệm nghề nghiệp tương lai</a></li>
+                        <li class="md-section-5"><a href="#" class="md-section-4">Thời khóa biểu</a></li>
                     </ul>
                 </li>
-                <li class="md-popup" data-fancybox="" data-src="#md-popup" href="javascript:;"><a href="#"><img src="./images/ico-dk.png" alt=""></a></li>
+                <li class="md-desktop pd-top"><a href="#">Lý do chọn tomato</a></li>
+                <li class="md-popup pd-top" ><a href="#" class="md-section-1"><img src="./images/ico-dk.png" alt=""></a></li>
                 <div class="toggle-menu md-mobile">
                     <img src="./images/ico-tg.png" alt="">
                     <ul class="menu-mb">
-                        <li><a href="#" class="md-section-1">Giới thiệu</a></li>
-                        <li>
-                            <a href="#" class="md-section-5">Chương trình học</a>
-                            <ul class="sub-menu">
-                                <li class="md-section-5"><a href="#">Mầm non (02-05 tuổi)</a></li>
-                                <li class="md-section-5"><a href="#">Tiền tiểu học (05-06 tuổi)</a></li>
-                                <li class="md-section-5"><a href="#">Tiểu học (06-11 tuổi)</a></li>
-                            </ul>
-                        </li>
+                        <li class="md-section-5"><a href="#" class="md-section-2">5 nhóm kỹ năng thiết yếu</a></li>
+                        <li class="md-section-5"><a href="#" class="md-section-3">6 tuần trải nghiệm nghề nghiệp tương lai</a></li>
+                        <li class="md-section-5"><a href="#" class="md-section-4">Thời khóa biểu</a></li>
                     </ul>
                 </div>
             </ul>
-            <div id="md-popup" class="main-popup">
-                <h6>Ưu đãi lên đến <span>35%</span></h6>
-                <form action="">                    
-                    <div class="md-row md-row-2 clearfix">
-                        <input type="text" placeholder="Họ tên của Ba mẹ:"> 
-                       <!--  <p class="error">Vui lòng nhập họ & tên</p>    -->                   
-                    </div>
-                    <div class="md-row">
-                        <input type="phone" placeholder="Số điện thoại:">
-                       <!--  <p class="error">Vui lòng nhập số điện thoại</p> -->
-                    </div>
-                    <div class="md-row">
-                        <input type="email" placeholder="Email:">
-                        <!-- <p class="error">Vui lòng nhập email</p> -->
-                    </div>
-                    <div class="md-row">
-                        <div class="ui dropdown">
-                          <input type="hidden">
-                          <i class="dropdown icon"></i>
-                          <div class="default text">Chương trình học</div>
-                          <div class="menu">
-                            <div class="item" >Mầm non: 2-5 tuổi</div>
-                            <div class="item" >Tiền tiểu học: 5-6 tuổi</div>
-                            <div class="item" >Tiểu học: 6-11 tuổi</div>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="md-row">
-                        <div class="ui dropdown">
-                          <input type="hidden">
-                          <i class="dropdown icon"></i>
-                          <div class="default text">Cơ sở của Trường Hè Skill Up Summer 2025</div>
-                          <div class="menu">
-                            <div class="item" >TOMATO - Quận Phú Nhuận</div>
-                            <div class="item" >TOMATO - Sala</div>
-                            <div class="item" >TOMATO - Quận 7</div>
-                            <div class="item" >TOMATO - Quận 9</div>
-                          </div>
-                        </div>
-                    </div>
-                    
-                    <input type="button" value="TƯ VẤN NGAY">
-                </form>
-            </div>
-            <div class="md-popup-2" id="md-popup-2">
-                <img src="./images/bg-popup-2.jpg" alt="" class="bg-popup-2">
-                <a href="javascript:void(0);" onclick="window.location.href = '#'"><img src="./images/ico-button-2.png" alt="" class="ico-button-2"></a>
-            </div>
         </div>
         <div class="banner">
+            <img src="./images/text-banner.png" alt="" class="text-banner">
             <div class="owl-carousel owl-theme">
-                <div class="item"><img src="./images/banner-1.png" alt=""></div>
-                <div class="item"><img src="./images/banner-2.png" alt=""></div>
-                <div class="item"><img src="./images/banner-3.png" alt=""></div>
-                <div class="item"><img src="./images/banner-4.png" alt=""></div>
-                <div class="item"><img src="./images/banner-5.png" alt=""></div>
+                <div class="item"><img src="./images/banner-1.jpg" alt=""><a href="#" class="ico-button-4 md-section-1">Khám phá ngay</a></div>
+                <div class="item"><img src="./images/banner-2.jpg" alt=""><a href="#" class="ico-button-4 md-section-1">Khám phá ngay</a></div>
+                <div class="item"><img src="./images/banner-3.jpg" alt=""><a href="#" class="ico-button-4 md-section-1">Khám phá ngay</a></div>
             </div>
+            <iframe  src="https://www.youtube.com/embed/qiienZbCeTc?autoplay=1&mute=1" allowfullscreen></iframe>
         </div>
     </header>
     <div class="page-main">
-        <div class="section-1">
-            <div class="md-top-sc1">
-                <img src="./images/img-sc1.png" alt=""  class="img-sc1 md-desktop">
-                <img src="./images/text-sc1.png" alt=""  class="text-sc1 md-desktop wow zoomInUp" data-wow-delay="0.3s" data-wow-duration="1s">
-                <img src="./images/img-sc1-mb.png" alt=""  class="img-sc1 md-mobile">
-                <img src="./images/text-sc1.png" alt=""  class="text-sc1 md-mobile wow zoomInUp" data-wow-delay="0.3s" data-wow-duration="1s">
-                <img src="./images/img-sc1-mb-child.png" alt="" class="md-mobile img-sc1-mb-child">
-                <!-- <img src="./images/img-sc1-ico-1.png" alt="" class="img-sc1-ico-1 md-mobile"> -->
-                <div class="md-popup-fc md-mobile">
-                    <div class="md-col md-col-1">
-                        <div class="fc-op"></div>
-                        <img src="./images/img-sc1-ico-1.png" alt="">
-                    </div>
-                    <div class="md-col md-col-2">
-                        <div class="fc-op"></div>
-                        <img src="./images/img-sc1-ico-2.png" alt="">
-                    </div>
-                    <div class="md-col md-col-3">
-                        <div class="fc-op"></div>
-                        <img src="./images/img-sc1-ico-3.png" alt="">
-                    </div>
-                    <div class="md-col md-col-4">
-                        <div class="fc-op"></div>
-                        <img src="./images/img-sc1-ico-4.png" alt="">
-                    </div>
-                    <div class="md-col md-col-5">
-                        <div class="fc-op"></div>
-                        <img src="./images/img-sc1-ico-5.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <img src="./images/img-sc2.png" alt="" class="img-sc2">
-            <div class="main-section-1 clearfix">
-                <div class="container">
-                    <img src="./images/img-sc3.png" alt="" class="md-desktop">
-                    <img src="./images/img-sc3-mb.png" alt="" class="md-mobile">
-                </div>
-            </div>
-        </div>
-        <div class="section-2 clearfix">
-            <div class="md-left">
-                <img src="./images/img-sc4.png" alt="" class="md-mobile">
-                <p><span>Cô Nguyễn Thúy Uyên Phương</span> là một nhà giáo dục tâm huyết, sáng lập và vận hành nhiều dự án giáo dục đổi mới tại Việt Nam. Từ bỏ vị trí lãnh đạo tại một công ty đa quốc gia, cô khởi nghiệp với đam mê giáo dục tuổi đầu đời, đồng hành cùng phụ huynh và trẻ em.</p>
-                <p>Với Trường Hè <span>"Skill Up Summer 2025"</span>, cô và đội ngũ TOMATO mong muốn biến mùa hè thành hành trình phát triển toàn diện cho trẻ – từ kỹ năng sống, tư duy sáng tạo đến định hướng nghề nghiệp. Với tâm huyết và tầm nhìn tiến bộ, cô cam kết đồng hành cùng Ba Mẹ để giúp các con tỏa sáng!</p>
-                <img src="./images/img-sc5.png" alt="" class="md-desktop">
-            </div>
-            <div class="md-right">
-                <img src="./images/img-sc4.png" alt="" class="md-desktop">
-                <img src="./images/img-sc5.png" alt="" class="md-mobile">
-                <div class="md-text">
-                    <p>Trẻ sẽ có cơ hội phát triển những kỹ năng thiết yếu mà trường học chính khóa không thể cung cấp, bao gồm: tư duy sáng tạo, kỹ năng giao tiếp, làm việc nhóm, tư duy phản biện, và kiến thức về công nghệ như trí tuệ nhân tạo (AI).</p>
-                    <p>Dành cho trẻ mầm non, tiền tiểu học và tiểu học, chương trình tập trung phát triển tư duy sáng tạo, gia tiếp, làm việc nhóm, tư duy phản biện và AI qua phương pháp học trải nghiệm. Các môn như Design Thinking (Tư duy thiết kế), Future Skills (kỹ năng tương lai), và AI Adventure (trí tuệ nhân tạo), Mindful Kids & SEL (chú tâm & điều tiết cảm xúc), Kids Camp (dã ngoại và vui chơi ngoài trời) và Modern Dance (Nhảy hiện đại) giúp trẻ vừa học, vừa chơi, vừa rèn luyện thể chất.</p>
-                    <p>Với 12 năm kinh nghiệm, TOMATO cam kết mang đến môi trường học tập an toàn, hiện đại, giúp trẻ phát triển toàn diện.</p>
-                    <a href="#">Đăng ký ngay để bé có một mùa hè ý nghĩa</a>
-                </div>
-                
-            </div>
-        </div>
-        <div class="section-3" id="section-5">
-            
+        <div class="section-3 md-desktop">
             <div class="container">
-                <div id="accordion" class="clearfix">
-                  <div class="md-row clearfix">
-                      <div class="card">
-                        <div class="card-header" id="headingOne">
-                          <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              <img src="./images/nav-img-5.png" alt="" class="img-nav-tab">
-                              <img src="./images/ico-button-3.png" alt="" class="md-button-3">
-                            </button>
-                          </h5>
+                <h6>Trường hè tomato 2025 có gì đặc sắc?</h6>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="md-content">
+                            <img src="./images/sc2-img-1.png" alt="">
+                            <p>11</p>
+                            <span>môn học & hoạt động ngoại khóa</span>
                         </div>
-
-                        
-                      </div>
-                      <div class="card">
-                        <div class="card-header" id="headingTwo">
-                          <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              <img src="./images/nav-img-4.png" alt="" class="img-nav-tab">
-                              <img src="./images/ico-button-3.png" alt="" class="md-button-3">
-                            </button>
-                          </h5>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="md-content">
+                            <img src="./images/sc2-img-1.png" alt="">
+                            <p>6</p>
+                            <span>chuyến dã ngoại thực tế</span>
                         </div>
-                        
-                      </div>
-                      <div class="card md-card-2">
-                        <div class="card-header" id="headingThree">
-                          <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              <img src="./images/nav-img-6.png" alt="" class="img-nav-tab">
-                              <img src="./images/ico-button-3.png" alt="" class="md-button-3">
-                            </button>
-                          </h5>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="md-content">
+                            <img src="./images/sc2-img-1.png" alt="">
+                            <p>2</p>
+                            <span>trại hè quốc gia & quốc tế</span>
                         </div>
-                        
-                      </div>
-                  </div>
-                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body">
-                        
-                      <div class="main-content">
-
-                                
-                                <img src="./images/tkb-2.jpg" alt="" class="md-tkb md-desktop">
-                                <img src="./images/md-tkb-1-mb.jpg" alt="" class="md-mobile md-tkb">
-                                <a data-fancybox="" data-src="#md-popup-tkb" href="javascript:;"><img src="./images/ico-tkb.png" alt="" class="md-mobile md-tkb-mb"></a>
-                                <div id="md-popup-tkb" class="main-popup-tkb">
-                                    <img src="./images/tkb-1-mb.jpg" alt="">
-                                </div>
-                            </div>
                     </div>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div class="card-body">
-                        
-                      <div class="main-content">
-                                
-                                <img src="./images/tkb-3.jpg" alt="" class="md-tkb md-desktop">
-                                <img src="./images/md-tkb-2-mb.jpg" alt="" class="md-mobile md-tkb">
-                                <a data-fancybox="" data-src="#md-popup-tkb-2" href="javascript:;"><img src="./images/ico-tkb.png" alt="" class="md-mobile md-tkb-mb"></a>
-                                <div id="md-popup-tkb-2" class="main-popup-tkb">
-                                    <img src="./images/tkb-2-mb.jpg" alt="">
-                                </div>
-                            </div>
+                    <div class="col-md-3">
+                        <div class="md-content">
+                            <img src="./images/sc2-img-1.png" alt="">
+                            <p>6</p>
+                            <span>tuần trải nghiệm nghề nghiệp tương lai</span>
+                        </div>
                     </div>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                        
-                      <div class="main-content">
-                               
-                                <img src="./images/tkb-1.jpg" alt="" class="md-tkb md-desktop">
-                                <img src="./images/md-tkb-3-mb.jpg" alt="" class="md-mobile md-tkb">
-                                <a data-fancybox="" data-src="#md-popup-tkb-3" href="javascript:;"><img src="./images/ico-tkb.png" alt="" class="md-mobile md-tkb-mb"></a>
-                                <div id="md-popup-tkb-3" class="main-popup-tkb">
-                                    <img src="./images/tkb-3-mb.jpg" alt="">
-                                </div>
-                            </div>
-                    </div>
-                  </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="section-4">
-            <div class="container">
-                <div class="owl-carousel owl-theme">
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-8.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-9.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-10.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-11.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-12.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-13.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-14.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-15.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-16.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-17.jpeg" alt=""></div> 
                 </div>
             </div>
         </div>
-        <div class="section-5">
-            <div class="container">
-                <div class="owl-carousel owl-theme">
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-1.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-2.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-3.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-4.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-5.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-6.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-7.jpeg" alt=""></div>
-                    
+        <div class="section-3 md-mobile">
+            <h6>Trường hè tomato 2025 có gì đặc sắc?</h6>
+            <div class="main-content ">
+                <div class="md-row clearfix ">
+                    <div class="md-col">
+                        <p>11</p>
+                        <img src="./images/sc2-ico-1.png" alt="">
+                        <span>môn học &<br> hoạt động<br> ngoại khóa</span>
+                    </div>
+                    <div class="md-col">
+                        <p>6</p>
+                        <img src="./images/sc2-ico-2.png" alt="">
+                        <span>chuyến<br> dã ngoại<br> thực tế</span>
+                    </div>
+                </div>
+                <div class="md-row clearfix">
+                    <div class="md-col">
+                        <p>2</p>
+                        <img src="./images/sc2-ico-3.png" alt="">
+                        <span>trại hè<br> quốc gia &<br> quốc tế</span>
+                    </div>
+                    <div class="md-col">
+                        <p>6</p>
+                        <img src="./images/sc2-ico-4.png" alt="">
+                        <span>tuần trải nghiệm<br> nghề nghiệp<br> tương lai</span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="section-6">
+        <div class="section-4" id="section-2">
             <div class="container">
-                <div class="owl-carousel owl-theme">
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-8.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-9.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-10.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-11.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-12.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-13.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-14.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-15.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-16.jpeg" alt=""></div>
-                    <div class="item"><img src="./images/file-tientieuhoc/slide-17.jpeg" alt=""></div> 
-                    
+                <h6>5 Nhóm kỹ năng mới cho tương lai bứt phá</h6>
+                <div class="md-content md-desktop">
+                    <img src="./images/sc3-img-1-mb.png" alt="">
+                    <img src="./images/sc3-img-2-mb.png" alt="">
+                    <img src="./images/sc3-img-3-mb.png" alt="">
+                    <img src="./images/sc3-img-4-mb.png" alt="">
+                    <img src="./images/sc3-img-5-mb.png" alt="">
                 </div>
+                <div class="md-mobile">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item"><img src="./images/sc3-img-1.png" alt=""></div>
+                        <div class="item"><img src="./images/sc3-img-2.png" alt=""></div>
+                        <div class="item"><img src="./images/sc3-img-3.png" alt=""></div>
+                        <div class="item"><img src="./images/sc3-img-4.png" alt=""></div>
+                        <div class="item"><img src="./images/sc3-img-5.png" alt=""></div>
+                    </div>
+                </div>
+                <p>LỊCH HỌC TỪ 26/05 - 15/08<br>ĐĂNG KÝ LINH ĐỘNG THEO TỪNG TUẦN</p>
+                <a href="#" class="ico-button-4" data-fancybox="" data-src="#md-tkb" href="javascript:;">xem thời khóa biểu</a>
+                <div class="md-tkb" id="md-tkb"><img src="./images/img-tkb.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="section-5" id="section-3">
+            <div class="container">
+                <h6>6 tuần khám phá vũ trụ nghề nghiệp</h6>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="./images/sc4-img-1.png" alt="">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="./images/sc4-img-2.png" alt="">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="./images/sc4-img-3.png" alt="">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="./images/sc4-img-4.png" alt="">
+                       
+                    </div>
+                    <div class="item">
+                        <img src="./images/sc4-img-5.png" alt="">
+                       
+                    </div>
+                    <div class="item">
+                        <img src="./images/sc4-img-6.png" alt="">
+                       
+                    </div>                    
+                </div>
+                <a href="#" class="ico-button-4 md-section-1">học thử ngay</a>
+            </div>
+        </div>
+        <div class="section-6 clearfix">
+            <div class="container">
+                <h6>3 lý do nên chọn trường hè tomato</h6>
+                <img src="./images/sc5-img-1.jpg" alt="">
+                <div class="md-text"><p class="md-span">12</p> năm kinh nghiệm đổi mới và kiến tạo trường hè bán trú</div>
+                <div class="md-text"><p class="md-span">320.000+</p><br> giờ hoạt động trường hè và trại hè quốc tế</div>
+                <div class="md-text" >được asic công nhận là tổ chức giáo dục tận tâm với học sinh</div>
             </div>
         </div>
         <div class="section-7">
-            <h6>Cảm nhận của Ba mẹ<br>về Khóa Hè 2024</h6>
             <div class="container">
+                <h6>KHOẢNH KHẮC ĐÁNG NHỚ TẠI TRƯỜNG HÈ TOMATO</h6>
                 <div class="owl-carousel owl-theme">
-                    <div class="item"><img src="./images/file-bame/slide-9.jpeg" alt=""></div> 
-                    <div class="item"><img src="./images/file-bame/slide-10.jpeg" alt=""></div>      
-                    <div class="item"><img src="./images/file-bame/slide-1.jpeg" alt=""></div> 
-                    <div class="item"><img src="./images/file-bame/slide-2.jpeg" alt=""></div> 
-                    <div class="item"><img src="./images/file-bame/slide-3.jpeg" alt=""></div> 
-                    <div class="item"><img src="./images/file-bame/slide-4.jpeg" alt=""></div> 
-                    <div class="item"><img src="./images/file-bame/slide-5.jpeg" alt=""></div> 
-                    <div class="item"><img src="./images/file-bame/slide-6.jpeg" alt=""></div> 
-                    <div class="item"><img src="./images/file-bame/slide-7.jpeg" alt=""></div> 
-                    <div class="item"><img src="./images/file-bame/slide-8.jpeg" alt=""></div> 
-                                
+                    <div class="item"><img src="./images/sc6-img-1.jpg" alt=""></div>
+                    <div class="item"><img src="./images/sc6-img-2.jpg" alt=""></div>
+                    <div class="item"><img src="./images/sc6-img-3.jpg" alt=""></div>
+                    <div class="item"><img src="./images/sc6-img-4.jpg" alt=""></div>
+                    <div class="item"><img src="./images/sc6-img-5.jpg" alt=""></div>
+                    <div class="item"><img src="./images/sc6-img-6.jpg" alt=""></div>
+                    <div class="item"><img src="./images/sc6-img-7.jpg" alt=""></div>
+                    <div class="item"><img src="./images/sc6-img-8.jpg" alt=""></div>
+                    <div class="item"><img src="./images/sc6-img-9.jpg" alt=""></div>
+                    <div class="item"><img src="./images/sc6-img-10.jpeg" alt=""></div>
+                    <div class="item"><img src="./images/sc6-img-11.jpeg" alt=""></div>
+                    <div class="item"><img src="./images/sc6-img-12.jpg" alt=""></div>
+                    <div class="item"><img src="./images/sc6-img-13.jpg" alt=""></div>
+                    <div class="item"><img src="./images/sc6-img-14.jpg" alt=""></div>
                 </div>
             </div>
         </div>
         <div class="section-8">
-            <h6>Cảm nhận của các bé Mầm Non, Tiền Tiểu Học và Tiểu Học<br>về Khóa Hè 2024</h6>
             <div class="container">
-                <div class="owl-carousel owl-theme">  
-                    <div class="item"><img src="./images/file-hocsinh/slide-1.jpeg" alt=""></div> 
-                    <div class="item"><img src="./images/file-hocsinh/slide-2.jpeg" alt=""></div> 
-                    <div class="item"><img src="./images/file-hocsinh/slide-3.jpeg" alt=""></div> 
-                    <div class="item"><img src="./images/file-hocsinh/slide-4.jpeg" alt=""></div> 
-                    <div class="item"><img src="./images/file-hocsinh/slide-5.jpeg" alt=""></div> 
-                    <div class="item"><img src="./images/file-hocsinh/slide-6.jpeg" alt=""></div> 
-                                
+                <h6>CẢM NHẬN VỀ TRƯỜNG HÈ TOMATO</h6>
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><img src="./images/sc7-img-1.png" alt=""></div>
+                    <div class="item"><img src="./images/sc7-img-2.png" alt=""></div>
+                    <div class="item"><img src="./images/sc7-img-3.png" alt=""></div>
+                    <div class="item"><img src="./images/sc7-img-4.png" alt=""></div>
+                    <div class="item"><img src="./images/sc7-img-5.png" alt=""></div>
                 </div>
             </div>
         </div>
     </div>
     <footer class="footer clearfix">
-        <div class="top-footer">
-            <img src="./images/bg-bottom.png" alt="" class="bg-bottom md-desktop">
-            <img src="./images/bg-bottom-mb.png" alt="" class="bg-bottom md-mobile">
-            <div class="container">
-                 <div class="md-row">
-                    <div class="md-left">
-                        <div class="md-col clearfix">
-                           <img src="./images/ico-pl.png" alt="">
-                           <div class="md-text">
-                               <h6>TOMATO Phú Nhuận</h6>
-                               <p>329/5 Nguyễn Trọng Tuyển, P10, Q.Phú Nhuận, TP.HCM.</p>
-                           </div>
-                        </div>
-                        <div class="md-col clearfix">
-                           <img src="./images/ico-pl.png" alt="">
-                           <div class="md-text">
-                               <h6>TOMATO SALA</h6>
-                               <p>90-92 đường B2, Khu đô thị SALA, TP. Thủ Đức, TPHCM.</p>
-                           </div>
-                        </div>
-                        <div class="md-col clearfix">
-                           <img src="./images/ico-pl.png" alt="">
-                           <div class="md-text">
-                               <h6>TOMATO Quận 9</h6>
-                               <p>500 Liên Phường, P. Phước Long B, TP. Thủ Đức, TPHCM.</p>
-                           </div>
-                        </div>
-                        <div class="md-col clearfix">
-                           <img src="./images/ico-pl.png" alt="">
-                           <div class="md-text">
-                               <h6>TOMATO Quận 7</h6>
-                               <p>Số 6 đường Số 1, KDC CityLand - 99 Nguyễn Thị Thập, P. Tân Phú, Q.7, TP.HCM.</p>
-                           </div>
-                        </div>
-                    </div>
-                    <div class="md-right">
+        <div class="container">
+            <a href="#" class="logo md-desktop"><img src="./images/logo.png" alt=""></a>
+            <div class="content-footer clearfix" id="section-1">
+                <div class="md-right">
+                    <h6>ĐĂNG KÝ NHẬN <span>Vui lòng để lại thông tin phía dưới để được tư vấn miễn phí</span></h6>
+                    <form action="">
+                        
                         <div class="md-col">
-                            <ul>                           
-                                <li><a href="https://www.facebook.com/TruongTOMATO"><img src="./images/ico-ft-2.png" alt=""></a></li>
-                                <li><a href="https://www.youtube.com/@TOMATOChildrensHome"><img src="./images/ico-ft-3.png" alt=""></a></li>
-                                <li><a href="https://zalo.me/3564837583900344766"><img src="./images/ico-ft-4.png" alt=""></a></li>
-                                <li><a href="https://www.tiktok.com/@tomatochildrenshome"><img src="./images/ico-ft-5.png" alt=""></a></li>
-                            </ul>
-                        </div>
-                        <div class="md-col md-col-2">
-                            <a href="http://www.tomato.edu.vn"><img src="./images/ico-ft-1.png" alt=""><span>www.tomato.edu.vn</span></a>
+                            <input type="text" placeholder="Họ tên*">
+                            <!-- <p class="error">Vui lòng nhập họ tên</p> -->
                         </div>
                         <div class="md-col">
-                            <div class="md-time clearfix">
-                                <img src="./images/ico-ft-6.png" alt="">
-                                <div class="md-text">
-                                    <p>Giờ hoạt động</p>
-                                    <span>+ Thứ Hai - Thứ Bảy: Từ 08h00 đến 17h30</span>
-                                    <span>+ Chủ Nhật: Từ 08h00 đến 12h00</span>
-                                </div>
+                            <input type="tel" placeholder="Điện thoại*">
+                            <!-- <p class="error">Vui lòng nhập số điện thoại</p> -->
+                        </div>
+                        <div class="md-col">
+                            <div class="ui dropdown">
+                              <input type="hidden">
+                              <i class="dropdown icon"></i>
+                              <div class="default text">TOMATO cơ sở*</div>
+                              <div class="menu">
+                                <div class="item" >TOMATO - Quận Phú Nhuận</div>
+                                <div class="item" >TOMATO - Sala</div>
+                                <div class="item" >TOMATO - Quận 7</div>
+                                <div class="item" >TOMATO - Quận 9</div>
+                              </div>
                             </div>
                         </div>
+                        <input type="button" value="Tư vấn ngay">
+                    </form>
+                </div>
+                <a href="#" class="logo md-mobile"><img src="./images/logo.png" alt=""></a>
+                <div class="md-left">
+                    <h6>Hệ thống trường Ngoại khoá TOMATO</h6>
+                    <div class="md-col">
+                        <div class="md-top">
+                            <img src="./images/ico-pl.png" alt="">
+                            <p>TOMATO Phú  Nhuận</p>
+                        </div>
+                        <div class="md-bot">
+                            <p>327/5-7 Nguyễn Trọng Tuyển, Phường 10, Quận Phú Nhuận, TPHCM.</p>
+                        </div>
                     </div>
-                 </div>
-                 <a href="tel:0906616212"><img src="./images/ico-phone.png" alt="" class="ico-phone"></a>
+                    <div class="md-col">
+                        <div class="md-top">
+                            <img src="./images/ico-pl.png" alt="">
+                            <p>TOMATO SALA</p>
+                        </div>
+                        <div class="md-bot">
+                            <p>90-92 đường B2, Khu đô thị SALA, TP. Thủ Đức, TPHCM</p>
+                        </div>
+                    </div>
+                    <div class="md-col">
+                        <div class="md-top">
+                            <img src="./images/ico-pl.png" alt="">
+                            <p>TOMATO Quận 9</p>
+                        </div>
+                        <div class="md-bot">
+                            <p>500 Liên Phường, P. Phước Long B, TP. Thủ Đức, TPHCM.</p>
+                        </div>
+                    </div>
+                    <div class="md-col">
+                        <div class="md-top">
+                            <img src="./images/ico-pl.png" alt="">
+                            <p>TOMATO Quận 7</p>
+                        </div>
+                        <div class="md-bot">
+                            <p>Số 6 đường Số 1, KDC CityLand - 99 Nguyễn Thị Thập, P. Tân Phú, Q.7, TP.HCM.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="bot-footer">
+                <a href="tel:0906616212"><img src="./images/ico-phone.png" alt="" class="img-phone"></a>
+                <ul>
+                    <li><a href="mailto:info@tomato.edu.vn"><img src="./images/ico-4.png" alt=""></a></li>
+                    <li><a href="https://zalo.me/3564837583900344766" target="_blank"><img src="./images/ico-3.png" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/TruongTOMATO/" target="_blank"><img src="./images/ico-2.png" alt=""></a></li>
+                    <li><a href="https://www.youtube.com/@TOMATOChildrensHome" target="_blank"><img src="./images/ico-1.png" alt=""></a></li>
+                </ul>
             </div>
         </div>
         <div class="md-fixed clearfix">
