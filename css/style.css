@@ -805,7 +805,7 @@ p.error{
     font-size: calc(8px + 2vw);
   }
   .page-main .section-3 .main-content{
-    padding: 20px;
+    padding: 15px;
   }
   .page-main .section-3 .main-content .md-col{
     padding: 15px;
@@ -819,15 +819,19 @@ p.error{
   .page-main .section-3 .main-content .md-row{
     margin-bottom: 4%;
   }
+  .page-main .section-3 .main-content .md-row:last-child{
+    margin-bottom: 0px;
+  }
   .page-main .section-3 .main-content .md-col p{
     font-size: calc(60px + 4vw);
+    color: #FD6718;
   }
   .page-main .section-3 .main-content .md-col img{
     width: 40%;
     top: 20px;
   }
   .page-main .section-3 .main-content .md-col span{
-    font-size: calc(7px + 2vw);
+    font-size: calc(9px + 2vw);
   }
   .page-main .section-3{
     background: transparent;
