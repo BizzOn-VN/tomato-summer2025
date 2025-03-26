@@ -575,7 +575,7 @@ input[type=submit] {
   margin-bottom: 30px;
 }
 p.error{
-  color: #fe6718;
+  color: #fff;
   font-style: italic;
   margin-top: 3px;
   font-size: calc(2px + 1vw);
